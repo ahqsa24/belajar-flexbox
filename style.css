@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ffffff;
+    padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+}
+
+/* Latihan 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.layanan.satu {
+    background-color: rgb(96, 96, 251);
+}
+
+.layanan.dua {
+    background-color: rgb(251, 96, 96);
+}
+
+.layanan.tiga {
+    background-color: rgb(96, 251, 96);
+}
+
+/* Latihan 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.1);
+}
+
+/* Latihan 5 */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .container-satu {
+        flex-direction: column;
+    }
+
+    .kolom-utama {
+        order: 1;
+    }
+
+    .sidebar-satu {
+        order: 2;
+    }
+
+    .sidebar-dua {
+        order: 3;
+    }
+
+    .container-dua {
+        flex-direction: column;
+    }
+
+    .layanan {
+        width: 100%;
+    }
+
+    .container-empat {
+        flex-direction: column;
+    }
+}
